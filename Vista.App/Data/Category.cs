@@ -10,6 +10,8 @@ namespace Vista.App.Data
         [MaxLength(15)] 
 
         public required string CategoryName { get; set; }
+
         // Placeholder for List of Trainer Categories (many side of one-to-many)
+        public List<TrainerCategory>? TrainerCategories { get; set; }
     }
 }

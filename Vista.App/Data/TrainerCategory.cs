@@ -11,8 +11,13 @@ namespace Vista.App.Data
 
         [MaxLength(15)]
         public required string CategoryCode { get; set; }
+
         // Placeholder a navigation property to Trainer (one side of one-to-many)
+        public Trainer? Trainer { get; set; }
+
         // See TrainersDbConext for Foreign Key (Fluent API) definition 
+
         // Placeholder for a navigation property to Category (one side of one-to-many)
+        public Category? Category { get; set; }
     }
 }
