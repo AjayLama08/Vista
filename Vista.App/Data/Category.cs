@@ -7,8 +7,10 @@ namespace Vista.App.Data
         [Key] // Since the key name (CategoryCode) does not include
               // "Id", we have to use an annotation (could also
               // specify this using FluitAPI)
-        [MaxLength(15)] 
+        [MaxLength(15)]
+        public required string CategoryCode { get; set; }
 
+        [MaxLength(30)]
         public required string CategoryName { get; set; }
 
         // Placeholder for List of Trainer Categories (many side of one-to-many)
